@@ -5,8 +5,8 @@
 {% for article in article_list %}
 <div class="card">
     <div class="card-header">
-        <span class="font-weight-bold"><a
-                href="{% url 'article_detail' article.pk %}">{{ article.title }}</a> &middot; </span>
+        <span class="font-weight-bold"><a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a> &middot;
+        </span>
         <span class="text-muted">by {{ article.author }} |
             {{ article.date|date }}</span>
 
@@ -16,7 +16,6 @@
         or {{ article.date }}</span>
         or {{ article.date|date }}</span>
         or {{ article.date|date:"D d M Y" }} {{ article.date|time:"H:i" }}</span>
-
         https://docs.djangoproject.com/en/4.0/ref/templates/builtins/#date
         {% endcomment %}
     </div>
