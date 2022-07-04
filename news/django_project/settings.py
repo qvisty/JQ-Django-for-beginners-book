@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # Local
     "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
+    "articles.apps.ArticlesConfig",
 ]
 
 MIDDLEWARE = [
@@ -109,9 +110,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+# http://www.i18nguy.com/unicode/language-identifiers.html
+LANGUAGE_CODE = "da-DK"
 
-TIME_ZONE = "UTC"
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+TIME_ZONE = "Europe/Copenhagen"
 
 USE_I18N = True
 
